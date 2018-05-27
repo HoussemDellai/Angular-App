@@ -8,6 +8,8 @@ import { DisplaylabelComponent } from './displaylabel/displaylabel.component';
 import { EntertextComponent } from './entertext/entertext.component';
 import { DisplaylistComponent } from './displaylist/displaylist.component';
 import { AddtolistComponent } from './addtolist/addtolist.component';
+import { DisplaymodelComponent } from './displaymodel/displaymodel.component';
+import { DisplaylistmodelComponent } from './displaylistmodel/displaylistmodel.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { AddtolistComponent } from './addtolist/addtolist.component';
     DisplaylabelComponent,
     EntertextComponent,
     DisplaylistComponent,
-    AddtolistComponent
+    AddtolistComponent,
+    DisplaymodelComponent,
+    DisplaylistmodelComponent
   ],
   imports: [
     BrowserModule,
