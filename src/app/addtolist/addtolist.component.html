@@ -1,0 +1,12 @@
+<p>
+  addtolist works!
+</p>
+
+<input #nametextbox placeholder="name"/>
+<button (click)="addName(nametextbox.value)">Add Name</button>
+
+<ul>
+  <li *ngFor="let name of fullnames">
+    {{name}}
+  </li>
+</ul>
