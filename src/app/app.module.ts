@@ -10,6 +10,9 @@ import { DisplaylistComponent } from './displaylist/displaylist.component';
 import { AddtolistComponent } from './addtolist/addtolist.component';
 import { DisplaymodelComponent } from './displaymodel/displaymodel.component';
 import { DisplaylistmodelComponent } from './displaylistmodel/displaylistmodel.component';
+import { TodorepositoryService } from './todorepository.service';
+import { AddtodoComponent } from './crud-local/addtodo/addtodo.component';
+import { DisolaytodoComponent } from './crud-local/disolaytodo/disolaytodo.component';
 
 
 @NgModule({
@@ -20,13 +23,17 @@ import { DisplaylistmodelComponent } from './displaylistmodel/displaylistmodel.c
     DisplaylistComponent,
     AddtolistComponent,
     DisplaymodelComponent,
-    DisplaylistmodelComponent
+    DisplaylistmodelComponent,
+    AddtodoComponent,
+    DisolaytodoComponent
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    TodorepositoryService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
